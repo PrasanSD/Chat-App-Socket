@@ -126,6 +126,7 @@
     .form-control .join-btn > a {
       color: white;
       text-decoration: none;
+      cursor: pointer;
     }
 
   </style>
@@ -138,7 +139,7 @@
       <% Object.keys(rooms).forEach(room => { %>
         <div class="inner-wrap">
           <h1><%= room %></h1>
-          <button class="join-btn"><a href="/<%= room %>">Join</a></button>
+          <a href="/<%= room %>"><button class="join-btn">Join</button></a>
         </div>
       <% }) %>
     </div>
